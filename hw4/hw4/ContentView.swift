@@ -25,7 +25,7 @@ struct ContentView: View {
     // String representation of currentPath
     @State var currentPathString: String = ""
     // String representation of solutionPath. Helpful for debugging and testing.
-    @State var solutionPathString: String = ""
+    @State var solutionPathString: String = "don't by the same as empty string?"
     
     var body: some View {
         // NavigationStack wraps entire view.
@@ -57,9 +57,9 @@ struct ContentView: View {
         }
         .onAppear {
             // TODO: Uncomment after initializing solutionPath
-            Swift.print("hereeeee")
+            //Swift.print("hereeeee")
             solutionPathString = solutionPath.joined(separator: "->")
-            Swift.print(solutionPathString)
+            //Swift.print(solutionPathString)
         }
     }
 }
